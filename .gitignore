@@ -1,2 +1,8 @@
 *.zip
 *.gz
+*.xml#
+*.xml~
+*.xsl#
+*.xsl~
+*.xsd#
+*.xsd~
