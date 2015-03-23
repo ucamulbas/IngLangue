@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3org/2000/10/XMLSchema">
+
+<xsd:element name="ordis"><xsd:complexType><xsd:sequence>
+  <xsd:element name="ordi"><xsd:complexType><xsd:sequence>
+  
+	        <xsd:element name="marque" type="xsd:string"/>
+		<xsd:element name="modele" type="xsd:string"/>
+		<xsd:element name="os" type="xsd:string"/>
+		<xsd:element name="processeur" type="xsd:string"/>
+		<xsd:element name="ecran" type="xsd:string"><xsd:attribute name="taille" type="xsd:float"/><xsd:attribute name="resolution" type="xsd:string"/></xsd:element>
+	        
+  </xsd:sequence></xsd:complexType></xsd:element>
+</xsd:sequence></xsd:complexType></xsd:element>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="ordi.xsl" type="text/xsl" ?>
+<ordis>
+	<ordi>
+	        <marque> Asus </marque>
+		<modele> ASUS ZENBOOK UX301LA </modele>
+		<os> windows 8 pro </os>
+		<processeur> intel core </processeur>
+		<ecran taille="13.3" resolution="2560 x 1440"/>
+	</ordi>
+
+	<ordi>
+	        <marque> Acer </marque>
+		<modele> Acer Aspire 5738Z-424G50Mn </modele>
+		<os> Windows Vista Edition Familiale Premium </os>
+		<processeur> core duo T4200 </processeur>
+		<ecran taille="15.6" resolution="1366 x 728"/>
+	</ordi>
+	        
+	  
+</ordis>

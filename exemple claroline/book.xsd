@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<!--déclaration éléms type simple -->
+
+<xsd:element name="titre" type="xsd:string" />
+<xsd:element name="auteur" type="xsd:string" />
+<xsd:element name="nom" type="xsd:string" />
+<xsd:element name="ami-de" type="xsd:string" />
+<xsd:element name="depuis" type="xsd:date" />
+<xsd:element name="qualite" type="xsd:string" />
+
+<!-- définition des attributs -->
+<xsd:attribute name="isbn" type="xsd:string"/>
+
+<!--déclaration éléms type complex -->
+
+<xsd:element name="heros">
+<xsd:complexType>
+<xsd:sequence/>
+<xsd:element ref="nom"/>
+<xsd:element ref="ami-de" minOccurs="0" maxOccurs="unbounded" />
+<xsd:element ref="depuis" />
+<xsd:element ref="qualite" />
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+
+<xsd:element name="livre" >
+<xsd:complexType>
+<xsd:sequence/>
+<xsd:element ref="titre"/>
+<xsd:element ref="auteur" />
+<xsd:element ref="heros" minOccurs="0" maxOccurs="unbounded" />
+</xsd:sequence>
+<xsd:attribute ref="isbn"/>
+</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>
+	
+

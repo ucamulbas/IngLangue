@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<book isbn="0836217462"
+   xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="file:book.xsd">
+
+ <titre>Being a Dog Is a Full-Time Job
+ </titre>
+ <auteur>Charles M. Schulz</auteur>
+ <heros>
+  <nom>Snoopy</nom>
+  <ami-de>Peppermint Patty</ami-de>
+  <depuis>04-10-1950</depuis>
+  <qualite>
+    extraverti, virtuose
+  </qualite>
+ </heros>
+ <heros>
+  <name>Peppermint Patty</name>
+  <since>22-08-1966</since>
+  <qualite>audacieuse, impétueuse et garçon manqué</qualite>
+ </heros>
+</book>
+
+
