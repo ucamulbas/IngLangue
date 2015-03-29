@@ -26,6 +26,7 @@ import javax.swing.JTextPane;
 
 import x.ministart.parse.ParseAllLettersWorker;
 import x.ministart.parse.ParseParagWorker;
+import x.ministart.parse.Stats;
 import x.ministart.test.ThreadTest;
 
 /**
@@ -258,6 +259,15 @@ public class SwingUI extends JPanel {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					new ParseParagWorker(ui);
+				}
+
+			});
+			
+			menu.add (item = new JMenuItem ("Stats"));
+			item.addActionListener (new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					new Stats(ui);
 				}
 
 			});

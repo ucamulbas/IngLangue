@@ -68,7 +68,7 @@ public class ParseParagWorker{
 					setProgress( (original_txt_id+1) * 100 / original_txt_lenght);// update the progress
 
 					char s_char = doc.getText(parse_ind, 1).charAt(0);
-					if ((s_char != '.' && s_char != ':' && s_char !='»' && s_char !='?' && s_char !='!') && !Character.isWhitespace(s_char)) {
+					if ((s_char != '.' && s_char != ':' && /*s_char !='»' && */s_char !='?' && s_char !='!') && !Character.isWhitespace(s_char)) {
 						if (openTag)
 							++parse_ind;
 						else{
@@ -81,7 +81,7 @@ public class ParseParagWorker{
 						char t_char = doc.getText(parse_ind+1, 1).charAt(0);
 						char m_char = doc.getText(parse_ind-1, 1).charAt(0);
 						if (openTag && (t_char == ' ' || t_char == '\n' || t_char == '.') && Character.isLowerCase(m_char) 
-								|| t_char =='»' ){
+								/*|| t_char =='»'*/ ){
 							doc.insertString(parse_ind, end_balise , null);
 							++insertion_count;
 							parse_ind += end_balise.length()+1;
