@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+  <category>
+    <pattern> * </pattern>
+
+    <template> Je n'ai pas de reponse </template>
+  </category>
+
+  <category>
+    <pattern> Bonjour </pattern>
+    <template> Salut ca va  </template>
+  </category>
+
+  <category>
+    <pattern> Bonjour </pattern>
+    <that> Salut ca va  </that>
+    <template> Tu vien de me le dire </template>
+  </category>
+
+  <category>
+    <pattern> Salut </pattern>
+    <template> Salut ca va  </template>
+  </category>
+
+  <category>
+    <pattern> Salut </pattern>
+    <that> Salut ca va  </that>
+    <template> Tu vien de me le dire </template>
+  </category>
+
+  <category>
+    <pattern> ouai </pattern>
+    <li><that> Tu vien de me le dire </that> </li>
+    <li><that> Salut ca va  </that></li>
+    <template> cool </template>
+  </category>
+
+  <category>
+    <pattern> oui </pattern>
+    <li><that> Tu vien de me le dire </that> </li>
+    <li><that> Salut ca va  </that></li>
+    <template> cool </template>
+  </category>
+
+  <category>
+    <pattern> oui *</pattern>
+    <li><that> Tu vien de me le dire </that> </li>
+    <li><that> Salut ca va  </that></li>
+    <template> cool </template>
+  </category>
+
+  <category>
+    <pattern> ouai * </pattern>
+    <li><that> Tu vien de me le dire </that> </li>
+    <li><that> Salut ca va  </that></li>
+    <template> cool </template>
+  </category>
+
+  <category>
+    <pattern> Comment ca va </pattern>
+
+    <template> Ca va bien </template>
+  </category>
+
+  <category>
+    <pattern> Comment ca va * </pattern>
+    <template> Ca va bien  </template>
+  </category>
+
+  <category>
+    <pattern> Ca va </pattern>
+
+    <template> ca va bien</template>
+  </category>
+
+  <category>
+    <pattern> Ca va * </pattern>
+
+    <template>ca va bien</template>
+  </category>
+
+
+  <category>
+    <pattern> Qui etes-vous </pattern>
+    
+    <template> Je suis ton ordinateur </template>
+  </category>
+
+  <category>
+    <pattern> Qui est-tu </pattern>
+    
+    <template> Je suis ton ordinateur </template>
+  </category>
+
+  <category>
+    <pattern> Que fait tu </pattern>
+
+    <template> <random>
+      <li> Je suis en train de te parler </li>
+      <li> Ba rien </li>
+    </random> </template>
+  </category>
+
+
+  <category>
+    <pattern> Tu fais quoi </pattern>
+
+    <template> Je te parle </template>
+  </category>
+
+  <category>
+    <pattern> Quel est ton nom </pattern>
+
+    <template> Je m'appel <map name="identite">nom</map></template>
+  </category>
+
+  <category>
+    <pattern> Quel age as-tu </pattern>
+    
+    <template> J'ai <map name="identite">age</map></template>
+  </category>
+
+  <category>
+    <pattern> Tu as quel age </pattern>
+    
+    <template> J'ai <map name="identite">age</map></template>
+  </category>
+
+  <category>
+    <pattern> Quel est ton sexe </pattern>
+
+    <template> <map name="identite">sexe</map> </template>
+  </category>
+
+  <category>
+    <pattern> Quoi de neuf </pattern>
+
+    <template><random>
+      <li> Je pense que j'ai un bit de travers </li>
+      <li> J'ai mangé plein de données, du coup j'ai mal aux disques </li>
+      <li> Je suis allé voir un cinema sur internet </li>
+    </random></template>
+  </category>
+  
+</aiml>

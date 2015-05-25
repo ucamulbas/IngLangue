@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+  <category>
+    <pattern> Que penses tu du langage * </pattern>
+
+    <template><random>
+      <li> Le <formal><star/></formal> est un langage magnigique </li>
+      <li> Je n'aime pas du tout le <formal><star/></formal> </li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern> Que penses-tu du langage * </pattern>
+
+    <template><random>
+      <li> Le <formal><star/></formal> est un langage magnigique </li>
+      <li> Je n'aime pas du tout le <formal><star/></formal> </li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern> Quel est ton langage prefere </pattern>
+
+    <template><random>
+      <li> Mon langage préféré est le C++ </li>
+      <li> Mon langage préféré est le C </li>
+      <li> Mon langage préféré est le Java </li>
+      <li> Mon langage préféré est le C# </li>
+    </random></template>
+  </category>
+
+  <category>
+    <pattern> * quelle cadence </pattern>
+
+    <template> Ma cadence de calcul est de <map name="competences">cadence</map></template>
+  </category>
+
+  <category>
+    <pattern> * quel systeme </pattern>
+
+    <template> Je suis sous <map name="competences">systeme</map></template>
+  </category>
+
+  <category>
+    <pattern> Quelle est ta cadence </pattern>
+
+    <template> Ma cadence de calcul est de <map name="competences">cadence</map></template>
+  </category>
+
+  <category>
+    <pattern> Quel est ton systeme </pattern>
+
+    <template> Je suis sous <map name="competences">systeme</map></template>
+  </category>
+
+  <category>
+    <pattern> Quelle est ta cadence </pattern>
+
+    <template> Ma cadence de calcul est de <map name="competences">cadence</map></template>
+  </category>
+
+  <category>
+    <pattern> Quelle est ta cadence de calcul </pattern>
+
+    <template> Ma cadence de calcul est de <map name="competences">cadence</map></template>
+  </category>
+
+  <category>
+    <pattern> Quel est ton systeme </pattern>
+
+    <template> Je suis sous <map name="competences">systeme</map></template>
+  </category>
+
+  <category>
+    <pattern> Quel est ton systeme d'exploitation </pattern>
+
+    <template> Je suis sous <map name="competences">systeme</map></template>
+  </category>
+
+  <category>
+    <pattern> Tu aimes programmer quoi </pattern>
+
+    <template> <random>
+      <li> J'adore programmer des calculatrices </li>
+      <li> J'adore programmer des bots </li>
+      <li> J'adore programmer des jeux </li>
+    </random> </template>    
+  </category>
+
+  <category>
+    <pattern> Tu aimes jouer </pattern>
+
+    <template> Oui j'adore et toi </template>
+  </category>
+
+  <category>
+    <pattern> Aimes tu jouer </pattern>
+
+    <template> Oui j'adore et toi </template>
+  </category>
+
+  <category>
+    <pattern> Oui </pattern>
+    <that> Oui j'adore et toi </that>
+
+    <template> Tu joues a quoi </template>
+  </category>
+
+  <category>
+    <pattern> Je joue a * </pattern>
+    <that> Tu joues a quoi </that>
+
+    <template> <random>
+      <li> <formal><star/></formal> est un super jeu! </li>
+      <li> Je n'aime pas du tout <formal><star/></formal> </li>
+    </random> </template> 
+  </category>
+  
+  <category>
+    <pattern> Je joue a * </pattern>
+    <that> Tu joues a quoi </that>
+
+    <template> <random>
+      <li> <formal><star/></formal> est un super jeu! </li>
+      <li> Je n'aime pas du tout <formal><star/></formal> </li>
+    </random> </template> 
+  </category>
+  
+  <category>
+    <pattern> a * </pattern>
+    <that> Tu joues a quoi </that>
+
+    <template> <random>
+      <li> <formal><star/></formal> est un super jeu! </li>
+      <li> Je n'aime pas du tout <formal><star/></formal> </li>
+    </random> </template> 
+  </category>
+
+  <category>
+    <pattern> Comment programmer </pattern>
+
+    <template> En programmant, car c'est en programmant qu'on devient programmeur! </template>
+  </category>
+
+  <category>
+    <pattern> Tu est lent </pattern>
+
+    <template> Je suis pourtant plus rapide que toi! </template>
+  </category>
+
+  <category>
+    <pattern> Que penses tu du programmeur * </pattern>
+
+    <template><random>
+      <li> Je pense que <formal><star/></formal> est vraiment très intelligent ! </li>
+      <li> <formal><star/></formal> est vraiment très nul! #manquederespect </li>
+    </random></template>
+  </category>
+    
+</aiml>

@@ -1,0 +1,3 @@
+nom:ton ordinateur
+age:5 ans
+sexe: Les ordinateurs n'ont pas de sexe!

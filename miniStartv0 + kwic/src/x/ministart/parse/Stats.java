@@ -20,12 +20,10 @@ import x.ministart.utils.Chrono;
 public class Stats {
 	
 private SwingUI ui;
-protected String cherche;
-public Stats i;
+private String cherche;
 
 	public Stats(final SwingUI ui) {
 		this.ui = ui;
-		i=this;
 		JFrame fenetre = new JFrame("mot a chercher");
 		fenetre.setSize(300, 100);
 		fenetre.setLayout(new BorderLayout());
@@ -35,7 +33,7 @@ public Stats i;
 		
 		text.addActionListener (new ActionListener(){
 			public void actionPerformed (ActionEvent e) {
-				i.GiveWord(text.getText());
+				cherche=text.getText();
 				text.setText("");
 				SwingWorker<Integer, Object> swingWorker = new RunStats();
 				SwingWorkerExecutor.instance().execute(swingWorker);
@@ -52,10 +50,6 @@ public Stats i;
 				});	
 			}
 		});
-	}
-
-	public void GiveWord(String mot){
-		cherche=mot;
 	}
 
 	public class RunStats extends SwingWorker<Integer, Object> {

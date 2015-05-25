@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+  <category>
+    <pattern> Bonjour, comment allez-vous? </pattern>
+    <template> Bonjour, très bien merci </template>
+  </category>
+
+  <category>
+    <pattern> Parlez-moi de vous </pattern>
+    <template> Je suis <bot name="order"/>. Mon nom est <bot name="nom"/>
+    Je suis <bot name="profession"/> J'ai été activé à <bot name="birthplace"/>
+    </template>
+  </category>
+
+  <category>
+    <pattern> Quel temps fait-il aujourd'hui? </pattern>
+    <template> <random>
+      <li> Je ne suis pas la météo </li>
+      <li> J'espère qu'il fait beau </li>
+      <li> Il fait beau pour moi </li>
+    </random> </template>
+  </category>
+
+  <category>
+    <pattern> Qui est Albert Einstein </pattern>
+    <template>
+      <set name ="il"> Einstein </set> etait un scientifique <br/>
+    </template>
+  </category>
+
+  <category>
+    <pattern> Qui est-il? </pattern>
+    <template>
+      <get name="il"/>, je crois
+    </template>
+  </category>
+
+  <category>
+    <pattern> Ma couleur preferé est *</pattern>
+    <template>
+      Effectivement, <star/> est une belle couleur
+    </template>
+  </category>
+
+  <category>
+    <pattern> Ma couleur preferé est <set> couleur </set> </pattern>
+    <template>
+      <set name="couleur_favorite"> <formal> <star/> </formal> </set> est une belle couleur
+      <think> <set name="elle"> <set name="topic"> <star/> </set> </set> </think>
+    </template>
+  </category>
+
+  <category>
+    <set acteur="Denzel Washington"/>
+    <srai>
+      <pattern> Quel est votre acteur préféré </pattern>
+    </srai>
+    <template> Mon acteur préféré <bot name="acteur">, qui est le votre? </template>
+  </category>
+
+</aiml>
