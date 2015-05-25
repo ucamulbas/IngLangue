@@ -20,10 +20,16 @@ import x.ministart.utils.Chrono;
 public class Stats {
 	
 private SwingUI ui;
+<<<<<<< HEAD
 private String cherche;
 
 	public Stats(final SwingUI ui) {
 		this.ui = ui;
+=======
+protected String cherche;
+
+	public Stats(final SwingUI ui) {
+>>>>>>> ef3314b207a974c0346b4ff48e10fe8ccc1afee4
 		JFrame fenetre = new JFrame("mot a chercher");
 		fenetre.setSize(300, 100);
 		fenetre.setLayout(new BorderLayout());
