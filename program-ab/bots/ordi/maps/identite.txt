@@ -1,3 +1,6 @@
-nom:ton ordinateur
-age:5 ans
-sexe: Les ordinateurs n'ont pas de sexe!
+prenom:	John
+age:	10
+sexe:	homme
+taille:	1.40
+poids:	40
+metier:	ecolier

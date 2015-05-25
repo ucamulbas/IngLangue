@@ -1,22 +1,22 @@
 0,*,*,*,Je n'ai pas de reponse,normal.aiml
-0,BONJOUR,*,*,Salut ca va,normal.aiml
-0,BONJOUR,SALUT CA VA,*,Tu vien de me le dire,normal.aiml
-0,SALUT,*,*,Salut ca va,normal.aiml
-0,SALUT,SALUT CA VA,*,Tu vien de me le dire,normal.aiml
+0,NORESP,*,*,<random>#Newline      <li> Oui ? </li>#Newline      <li> Tu ne dis rien ? </li>#Newline      <li> Tu es là ? </li>#Newline    </random>,normal.aiml
+0,<SET>SALUTATION</SET>,*,*,<condition name="salutation" value="true">#Newline	Tu m'a deja salue </condition>#Newline      <condition name="salutation" value="unknown">#Newline	Salut ca va <think><set name="salutation">true</set></think></condition>,normal.aiml
 0,OUAI,*,*,cool,normal.aiml
 0,OUI,*,*,cool,normal.aiml
 0,OUI *,*,*,cool,normal.aiml
 0,OUAI *,*,*,cool,normal.aiml
+0,JE M'APPELLE *,*,*,Enchanter <think><set name="userName"><star/></set></think>,normal.aiml
+0,COMMENT JE M'APPELLE,*,*,Tu t'appelles  <get name="userName"> </get>,normal.aiml
 0,COMMENT CA VA,*,*,Ca va bien,normal.aiml
 0,COMMENT CA VA *,*,*,Ca va bien,normal.aiml
 0,CA VA,*,*,ca va bien,normal.aiml
 0,CA VA *,*,*,ca va bien,normal.aiml
 0,QUI ETES-VOUS,*,*,Je suis ton ordinateur,normal.aiml
-0,QUI EST-TU,*,*,Je suis ton ordinateur,normal.aiml
+0,QUI EST-TU,*,*,Je suis <map name="identite">prenom</map> et j'ai <map name="identite">age</map> ans je mesure <map name="identite">taille</map> mettre#Comma je pese <map name="identite">poids</map> kilos et je suis <map name="identite">metier</map>,normal.aiml
 0,QUE FAIT TU,*,*,<random>#Newline      <li> Je suis en train de te parler </li>#Newline      <li> Ba rien </li>#Newline    </random>,normal.aiml
 0,TU FAIS QUOI,*,*,Je te parle,normal.aiml
-0,QUEL EST TON NOM,*,*,Je m'appel <map name="identite">nom</map>,normal.aiml
-0,QUEL AGE AS-TU,*,*,J'ai <map name="identite">age</map>,normal.aiml
+0,<SET>NAME</SET>,*,*,Je m'appelle <map name="identite">prenom</map>,normal.aiml
+0,<SET>AGE</SET>,*,*,J'ai <map name="identite">age</map>,normal.aiml
 0,TU AS QUEL AGE,*,*,J'ai <map name="identite">age</map>,normal.aiml
 0,QUEL EST TON SEXE,*,*,<map name="identite">sexe</map>,normal.aiml
 0,QUOI DE NEUF,*,*,<random>#Newline      <li> Je pense que j'ai un bit de travers </li>#Newline      <li> J'ai mangé plein de données#Comma du coup j'ai mal aux disques </li>#Newline      <li> Je suis allé voir un cinema sur internet </li>#Newline    </random>,normal.aiml
