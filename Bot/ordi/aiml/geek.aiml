@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+
+
+  <category>
+    <pattern> Tu aimes jouer </pattern>
+    <template> Oui j'aime bien et toi </template>
+  </category>
+
+  <category>
+    <pattern> Aimes tu jouer </pattern>
+    <template> <srai> Tu aimes jouer </srai> </template>
+  </category>
+
+  <category>
+    <pattern> Oui </pattern>
+    <that> Oui j'aime bien et toi </that>
+    <template> Tu joues a quoi <think><set name="topic">jeu</set></think> </template>
+  </category>
+
+  <category>
+    <pattern> Oui *</pattern>
+    <that> Oui j'aime bien et toi </that>
+    <template> Tu joues a quoi <think><set name="topic">jeu</set></think></template>
+  </category>
+
+
+  <category>
+    <pattern> Ouai </pattern>
+    <that> Oui j'aime bien et toi </that>
+    <template> Tu joues a quoi <think><set name="topic">jeu</set></think> </template>
+  </category>
+
+
+  <category>
+    <pattern> Ouai *</pattern>
+    <that> Oui j'aime bien et toi </that>
+    <template> Tu joues a quoi <think><set name="topic">jeu</set></think> </template>
+  </category>
+
+<topic name="jeu">
+  <category>
+    <pattern> Je joue a * </pattern>
+    <template> <random>
+      <li> <formal><star/></formal> est un super jeu! </li>
+      <li> Je n'aime pas du tout <formal><star/></formal> </li>
+    </random> <set name="botAvis" value="true"/> </template> 
+  </category>
+  
+  <category>
+    <pattern> a * </pattern>
+    <template> <srai> Je joue a <star/> </srai> </template> 
+  </category>
+
+  <category>
+    <pattern> je joue a * et toi</pattern>
+    <template> je joue a mario </template> 
+  </category>
+
+  <category>
+    <pattern> a * et toi</pattern>
+    <template> je joue a mario </template> 
+  </category>
+
+ <category>
+    <pattern> j'aime bien mario</pattern>
+    <that> je joue a mario </that> 
+    <template> Il est trop bien </template>
+ </category>
+
+  <category>
+    <pattern> et * </pattern>
+    <template> <srai> Je joue a <star/> </srai> </template> 
+  </category>
+  
+  <category>
+    <pattern> Je suis d'accord </pattern>
+    <template>
+      <condition name="botAvis">
+	<li value="unknown"> Avec quoi </li>
+	<li value="true"> On est du meme avis </li> </condition>
+    </template> 
+  </category>
+
+</topic>
+    
+</aiml>

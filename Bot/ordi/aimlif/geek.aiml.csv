@@ -1,0 +1,13 @@
+0,TU AIMES JOUER,*,*,Oui j'aime bien et toi,geek.aiml
+0,AIMES TU JOUER,*,*,<srai> Tu aimes jouer </srai>,geek.aiml
+0,OUI,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,OUI *,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,OUAI,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,OUAI *,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,JE JOUE A *,*,JEU,<random>#Newline      <li> <formal><star/></formal> est un super jeu! </li>#Newline      <li> Je n'aime pas du tout <formal><star/></formal> </li>#Newline    </random> <set name="botAvis" value="true"/>,geek.aiml
+0,A *,*,JEU,<srai> Je joue a <star/> </srai>,geek.aiml
+0,JE JOUE A * ET TOI,*,JEU,je joue a mario,geek.aiml
+0,A * ET TOI,*,JEU,je joue a mario,geek.aiml
+0,J'AIME BIEN MARIO,JE JOUE A MARIO,JEU,Il est trop bien,geek.aiml
+0,ET *,*,JEU,<srai> Je joue a <star/> </srai>,geek.aiml
+0,JE SUIS D'ACCORD,*,JEU,<condition name="botAvis">#Newline	<li value="unknown"> Avec quoi </li>#Newline	<li value="true"> On est du meme avis </li> </condition>,geek.aiml
