@@ -1,18 +1,13 @@
-0,QUE PENSES TU DU LANGAGE *,*,*,<random>#Newline      <li> Le <formal><star/></formal> est un langage magnigique </li>#Newline      <li> Je n'aime pas du tout le <formal><star/></formal> </li>#Newline    </random>,geek.aiml
-0,QUE PENSES-TU DU LANGAGE *,*,*,<random>#Newline      <li> Le <formal><star/></formal> est un langage magnigique </li>#Newline      <li> Je n'aime pas du tout le <formal><star/></formal> </li>#Newline    </random>,geek.aiml
-0,QUEL EST TON LANGAGE PREFERE,*,*,<random>#Newline      <li> Mon langage préféré est le C++ </li>#Newline      <li> Mon langage préféré est le C </li>#Newline      <li> Mon langage préféré est le Java </li>#Newline      <li> Mon langage préféré est le C# </li>#Newline    </random>,geek.aiml
-0,* QUELLE CADENCE,*,*,Ma cadence de calcul est de <map name="competences">cadence</map>,geek.aiml
-0,* QUEL SYSTEME,*,*,Je suis sous <map name="competences">systeme</map>,geek.aiml
-0,QUELLE EST TA CADENCE,*,*,Ma cadence de calcul est de <map name="competences">cadence</map>,geek.aiml
-0,QUELLE EST TA CADENCE DE CALCUL,*,*,Ma cadence de calcul est de <map name="competences">cadence</map>,geek.aiml
-0,QUEL EST TON SYSTEME,*,*,Je suis sous <map name="competences">systeme</map>,geek.aiml
-0,QUEL EST TON SYSTEME D'EXPLOITATION,*,*,Je suis sous <map name="competences">systeme</map>,geek.aiml
-0,TU AIMES PROGRAMMER QUOI,*,*,<random>#Newline      <li> J'adore programmer des calculatrices </li>#Newline      <li> J'adore programmer des bots </li>#Newline      <li> J'adore programmer des jeux </li>#Newline    </random>,geek.aiml
-0,TU AIMES JOUER,*,*,Oui j'adore et toi,geek.aiml
-0,AIMES TU JOUER,*,*,Oui j'adore et toi,geek.aiml
-0,OUI,OUI J'ADORE ET TOI,*,Tu joues a quoi,geek.aiml
-0,JE JOUE A *,TU JOUES A QUOI,*,<random>#Newline      <li> <formal><star/></formal> est un super jeu! </li>#Newline      <li> Je n'aime pas du tout <formal><star/></formal> </li>#Newline    </random>,geek.aiml
-0,A *,TU JOUES A QUOI,*,<random>#Newline      <li> <formal><star/></formal> est un super jeu! </li>#Newline      <li> Je n'aime pas du tout <formal><star/></formal> </li>#Newline    </random>,geek.aiml
-0,COMMENT PROGRAMMER,*,*,En programmant#Comma car c'est en programmant qu'on devient programmeur!,geek.aiml
-0,TU EST LENT,*,*,Je suis pourtant plus rapide que toi!,geek.aiml
-0,QUE PENSES TU DU PROGRAMMEUR *,*,*,<random>#Newline      <li> Je pense que <formal><star/></formal> est vraiment très intelligent ! </li>#Newline      <li> <formal><star/></formal> est vraiment très nul! #manquederespect </li>#Newline    </random>,geek.aiml
+0,TU AIMES JOUER,*,*,Oui j'aime bien et toi,geek.aiml
+0,AIMES TU JOUER,*,*,<srai> Tu aimes jouer </srai>,geek.aiml
+0,OUI,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,OUI *,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,OUAI,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,OUAI *,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,JE JOUE A *,*,JEU,<random>#Newline      <li> <formal><star/></formal> est un super jeu! </li>#Newline      <li> Je n'aime pas du tout <formal><star/></formal> </li>#Newline    </random> <set name="botAvis" value="true"/>,geek.aiml
+0,A *,*,JEU,<srai> Je joue a <star/> </srai>,geek.aiml
+0,JE JOUE A * ET TOI,*,JEU,je joue a mario,geek.aiml
+0,A * ET TOI,*,JEU,je joue a mario,geek.aiml
+0,J'AIME BIEN MARIO,JE JOUE A MARIO,JEU,Il est trop bien,geek.aiml
+0,ET *,*,JEU,<srai> Je joue a <star/> </srai>,geek.aiml
+0,JE SUIS D'ACCORD,*,JEU,<condition name="botAvis">#Newline	<li value="unknown"> Avec quoi </li>#Newline	<li value="true"> On est du meme avis </li> </condition>,geek.aiml

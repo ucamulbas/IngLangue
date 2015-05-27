@@ -1,0 +1,4 @@
+0,<SET>RIGOLE</SET>,*,*,Content que ça te fasse rire,annexe.aiml
+0,<SET>SUPER</SET>,*,*,Ouai c'est super,annexe.aiml
+0,QUEL TEMPS IL FAIT *,*,*,<random>#Newline     <li> Il pleut </li>#Newline     <li> Il fait beau </li>#Newline     <li> Il y a des nuages </li>#Newline   </random>,annexe.aiml
+0,QUEL TEMPS IL FAIT,*,*,<random>#Newline     <li> Il pleut </li>#Newline     <li> Il fait beau </li>#Newline     <li> Il y a des nuages </li>#Newline   </random>,annexe.aiml

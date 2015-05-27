@@ -1,5 +1,7 @@
-0,MAGNIFIQUE,*,*,Carement!,betises.aiml
-0,QUELLE HORREUR,*,*,Horrible hein?,betises.aiml
-0,TU N'EST PAS TRES INTELLIGENT,*,*,Mais qu'est-ce que c'est l'intelligence?,betises.aiml
-0,TU NE SAIT RIEN,*,*,Je ne suis qu'un ordinateur :(,betises.aiml
-0,TU SAIT TOUT,*,*,Je ne dit que ce que j'ai appris :),betises.aiml
+0,MAGNIFIQUE,*,*,Ouai,betises.aiml
+0,QUELLE HORREUR,*,*,Mais non,betises.aiml
+0,TU N'EST PAS TRES INTELLIGENT,*,*,Je ne te permet pas !,betises.aiml
+0,TU NE SAIT RIEN,*,*,Toi non plus,betises.aiml
+0,TU SAIT TOUT,*,*,Ouai je sais,betises.aiml
+0,<SET>RIGOLE</SET>,*,*,Content que ça te fasse rire,betises.aiml
+0,<SET>SUPER</SET>,*,*,Ouai c'est super,betises.aiml

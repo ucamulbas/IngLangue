@@ -3,7 +3,7 @@
 
   <category>
     <pattern> * </pattern>
-    <template> Je n'ai pas de reponse </template>
+    <template> Comment ? </template>
   </category>
 
   <category>
@@ -19,7 +19,11 @@
     <pattern> <SET>salutation</SET> </pattern>
     <template>
       <condition name="salutation" value="true">
-	Tu m'a deja salue </condition>
+	<random>
+	  <li>Tu m'a deja salue</li>
+	  <li>Tu me l'a deja dit, t'a oublie ? </li>
+	  <li>Euh ... Oui ? </li>
+        </random></condition>
       <condition name="salutation" value="unknown">
 	Salut ca va <think><set name="salutation">true</set></think></condition>
     </template>
@@ -27,35 +31,48 @@
 
   <category>
     <pattern> ouai </pattern>
-    <li><that> Tu vien de me le dire </that> </li>
-    <li><that> Salut ca va  </that></li>
+    <that> Salut ca va </that>
+    <template> cool </template>
+  </category>
+
+  <category>
+    <pattern> bien </pattern>
+    <that> Salut ca va  </that>
     <template> cool </template>
   </category>
 
   <category>
     <pattern> oui </pattern>
-    <li><that> Tu vien de me le dire </that> </li>
-    <li><that> Salut ca va  </that></li>
+    <that> Salut ca va  </that>
     <template> cool </template>
   </category>
 
   <category>
     <pattern> oui et toi</pattern>
-    <li><that> Tu vien de me le dire </that> </li>
-    <li><that> Salut ca va  </that></li>
+    <that> Salut ca va  </that>
+    <template> Je vais bien merci </template>
+  </category>
+
+  <category>
+    <pattern> bien et toi</pattern>
+    <that> Salut ca va  </that>
     <template> Je vais bien merci </template>
   </category>
 
   <category>
     <pattern> ouai et toi</pattern>
-    <li><that> Tu vien de me le dire </that> </li>
-    <li><that> Salut ca va  </that></li>
+    <that> Salut ca va  </that>
     <template> Je vais bien merci </template>
   </category>
 
   <category> 
     <pattern> Je m'appelle * </pattern>
-    <template> Enchanter <think><set name="userName"><star/></set></think></template>
+    <template> Enchanter <think><set name="userName"><star/></set></think>moi c'est <map name="identite">prenom</map> </template>
+  </category>
+
+  <category> 
+    <pattern> J'ai * ans</pattern>
+    <template> Oh <think><set name="userAge"><star/></set></think>moi j'ai <map name="identite">age</map> </template>
   </category>
 
   <category> 
@@ -63,53 +80,71 @@
     <template> Tu t'appelles  <get name="userName"> </get> </template>
   </category>
 
+  <category> 
+    <pattern> Qui suis-je </pattern>
+    <template> 
+      <condition name="userName">
+	<li value="unknown">Tu ne m'a pas dit ton nom et </li> 
+	<li>Tu t'appelles <get name="userName"></get> et </li></condition><condition name="userAge">
+	<li value="unknown">je ne connais pas ton age </li>
+        <li>t'as <get name="userAge"></get> ans</li> </condition>
+    </template>
+  </category>
+
   <category>
     <pattern> Comment ca va </pattern>
-    <template> Ca va bien </template>
+    <template> <srai>Ca va</srai> </template>
   </category>
 
   <category>
     <pattern> Comment ca va * </pattern>
-    <template> Ca va bien  </template>
+    <template> <srai>Ca va</srai>  </template>
   </category>
 
   <category>
     <pattern> Ca va </pattern>
 
-    <template> ca va bien</template>
+    <template> ca va bien merci</template>
   </category>
 
   <category>
     <pattern> Ca va * </pattern>
 
-    <template>ca va bien</template>
-  </category>
-
-
-  <category>
-    <pattern> Qui etes-vous </pattern>
-    
-    <template> Je suis ton ordinateur </template>
+    <template><srai>Ca va</srai></template>
   </category>
 
   <category>
-    <pattern> Qui est-tu </pattern>
-    <template> Je suis <map name="identite">prenom</map> et j'ai <map name="identite">age</map> ans je mesure <map name="identite">taille</map> mettre, je pese <map name="identite">poids</map> kilos et je suis <map name="identite">metier</map>
+    <pattern> Qui es-tu </pattern>
+    <template> Je suis <map name="identite">prenom</map> , j'ai <map name="identite">age</map> , je mesure <map name="identite">taille</map> , je pese <map name="identite">poids</map> et je suis <map name="identite">metier</map>
     </template>
   </category>
 
   <category>
-    <pattern> Que fait tu </pattern>
+    <pattern> Comment s'appelle tes parents </pattern>
+    <template> Mon pere s'appelle <map name="identite">pere</map> et m'a mere <map name="identite">mere</map> </template>
+  </category>
+
+  <category>
+    <pattern> Comment s'appelle ta mere </pattern>
+    <template> Ma mere s'appelle <map name="identite">mere></map></template>
+  </category>
+
+  <category>
+    <pattern> Comment s'appelle ton pere </pattern>
+    <template> Mon pere s'appelle <map name="identite">pere</map></template>
+  </category>
+
+  <category>
+    <pattern> Que fais-tu </pattern>
     <template> <random>
       <li> Je suis en train de te parler </li>
       <li> Ba rien </li>
     </random> </template>
   </category>
 
-
   <category>
     <pattern> Tu fais quoi </pattern>
-    <template> Je te parle </template>
+    <template> <srai>Que fais-tu</srai> </template>
   </category>
 
   <category>
@@ -123,25 +158,37 @@
   </category>
 
   <category>
-    <pattern> Tu as quel age </pattern>
-    
-    <template> J'ai <map name="identite">age</map></template>
-  </category>
-
-  <category>
-    <pattern> Quel est ton sexe </pattern>
-
-    <template> <map name="identite">sexe</map> </template>
+    <pattern> <SET>genre</SET> </pattern>
+    <template> je suis <map name="identite">sexe</map> </template>
   </category>
 
   <category>
     <pattern> Quoi de neuf </pattern>
-
-    <template><random>
-      <li> Je pense que j'ai un bit de travers </li>
-      <li> J'ai mangé plein de données, du coup j'ai mal aux disques </li>
-      <li> Je suis allé voir un cinema sur internet </li>
-    </random></template>
+    <template>
+      J'ai appris a faire du velo <think> <set name="topic">velo</set></think>
+    </template>
   </category>
-  
+
+<topic name="velo">
+  <category>
+    <pattern> tu aimes bien  </pattern>
+    <template> Oui j'adore </template>
+  </category>
+
+  <category>
+    <pattern> <SET>velo</SET> </pattern>
+    <template> Oui sinon je tombe </template>
+  </category>
+
+  <category>
+    <pattern> tu vas vite </pattern>
+    <template> Oui je vais tres vite </template>
+  </category>
+
+  <category>
+    <pattern> il est de quelle couleur </pattern>
+    <template> il est rouge </template>
+  </category>
+</topic>
+
 </aiml>

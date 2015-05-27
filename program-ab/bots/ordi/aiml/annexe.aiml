@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+ <category>
+   <pattern> <SET>rigole</SET> </pattern>
+   <template> Content que ça te fasse rire </template>
+ </category>
+
+ <category>
+   <pattern> <SET>super</SET> </pattern>
+   <template> Ouai c'est super </template>
+ </category>
+ 
+ <category>
+   <pattern> Quel temps il fait * </pattern>
+   <template><random>
+     <li> Il pleut </li>
+     <li> Il fait beau </li>
+     <li> Il y a des nuages </li>
+   </random></template>
+ </category>
+
+ <category>
+   <pattern> Quel temps il fait </pattern>
+   <template><random>
+     <li> Il pleut </li>
+     <li> Il fait beau </li>
+     <li> Il y a des nuages </li>
+   </random></template>
+ </category>
+
+</aiml>
