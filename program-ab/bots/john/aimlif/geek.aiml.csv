@@ -26,5 +26,5 @@
 0,J'AIME BIEN MARIO,*,JEU,Il est trop bien,geek.aiml
 0,J'AIME MARIO,*,JEU,Il est trop bien,geek.aiml
 0,ET *,*,JEU,<srai> Je joue a <star/> </srai>,geek.aiml
-0,JE SUIS D'ACCORD,*,JEU,<condition name="botAvis">#Newline	  <li value="unknown"> Avec quoi </li>#Newline	<li value="true"> On est du meme avis </li> </condition>,geek.aiml
-0,JE NE SUIS PAS D'ACCORD,*,JEU,<condition name="botAvis">#Newline	  <li value="unknown"> Avec quoi </li>#Newline	<li value="true"> Oh dommage </li> </condition>,geek.aiml
+0,JE SUIS D'ACCORD,*,JEU,<condition name="botAvis">#Newline	  <li value="unknown"> Avec quoi </li>#Newline	<li value="true"> On est du meme avis <think><set name="botAvis">unknown</set></think></li> </condition>,geek.aiml
+0,JE NE SUIS PAS D'ACCORD,*,JEU,<condition name="botAvis">#Newline	  <li value="unknown"> Avec quoi </li>#Newline	<li value="true"> Oh dommage <think><set name="botAvis">unknown</set></think></li> </condition>,geek.aiml

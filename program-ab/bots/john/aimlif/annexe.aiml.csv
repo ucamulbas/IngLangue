@@ -1,9 +1,15 @@
 0,<SET>RIGOLE</SET>,*,*,Content que ça te fasse rire,annexe.aiml
 0,<SET>SUPER</SET>,*,*,<random>#Newline     <li>Ouai c'est super </li>#Newline     <li>Oui c'est genial </li>#Newline     <li>Ouai </li>#Newline   </random>,annexe.aiml
 0,QUEL TEMPS IL FAIT *,*,*,<random>#Newline     <li> Il pleut </li>#Newline     <li> Il fait beau </li>#Newline     <li> Il y a des nuages </li>#Newline   </random>,annexe.aiml
+0,PARCE QUE,*,*,Ah bon,annexe.aiml
+0,PARCE QUE *,*,*,Ah bon,annexe.aiml
+0,POURQUOI,*,*,Je sais pas,annexe.aiml
+0,POURQUOI *,*,*,Je sais pas,annexe.aiml
 0,QUEL TEMPS IL FAIT,*,*,<random>#Newline     <li> Il pleut </li>#Newline     <li> Il fait beau </li>#Newline     <li> Il y a des nuages </li>#Newline   </random>,annexe.aiml
 0,<SET>COULEUR</SET>,*,*,C'est le vert et toi,annexe.aiml
-0,<SET>COULEUR</SET> *,C'EST LE VERT ET TOI,*,<random>#Newline     <li>J'aime bien le <star index="2"/></li>#Newline     <li>Ah j'aime pas le <star index="2"/></li>#Newline   </random>,annexe.aiml
+0,<SET>COULEUR</SET> *,C'EST LE VERT ET TOI,*,<random>#Newline     <li>J'aime bien le <star index="2"/><think><set name="botAvis">true</set></think></li>#Newline     <li>Ah j'aime pas le <star index="2"/><think><set name="botAvis">true</set></think></li>#Newline   </random>,annexe.aiml
+0,JE SUIS D'ACCORD,*,*,<condition name="botAvis">#Newline	  <li value="unknown"> Avec quoi </li>#Newline	<li value="true"> On est du meme avis <think><set name="botAvis">unknown</set></think></li> </condition>,annexe.aiml
+0,JE NE SUIS PAS D'ACCORD,*,*,<condition name="botAvis">#Newline	  <li value="unknown"> Avec quoi </li>#Newline	<li value="true"> Oh dommage <think><set name="botAvis">unknown</set></think></li> </condition>,annexe.aiml
 0,TU FAIS DU SPORT,*,*,Ouai je fais judo <think><set name="topic">sport</set></think>,annexe.aiml
 0,TU AIMES LE JUDO,*,*,Oui <think><set name="topic">sport</set></think>,annexe.aiml
 0,TU AIMES LE VELO,*,*,Oui <think><set name="topic">velo</set></think>,annexe.aiml
@@ -15,7 +21,7 @@
 0,QUI EST M. PAGNY,*,CLASSE,C'est mon prof,annexe.aiml
 0,QUI EST TON MEILLEUR AMIS,*,CLASSE,C'est Julien,annexe.aiml
 0,QUI EST JULIEN,*,CLASSE,C'est mon meilleur amis,annexe.aiml
-0,POURQUOI,NON J'AIME PAS C'EST NUL,CLASSE,Parce que y'a des devoirs,annexe.aiml
+0,POURQUOI,*,CLASSE,Parce que y'a des devoirs,annexe.aiml
 0,TU AIMES LES DEVOIRS,*,CLASSE,Non pas du tout,annexe.aiml
 0,TU Y ARRIVE,*,CLASSE,Je me debrouille#Comma j'ai la moyenne,annexe.aiml
 0,TU AS COMBIEN D'AMIS,*,CLASSE,Je sais pas#Comma beaucoup,annexe.aiml

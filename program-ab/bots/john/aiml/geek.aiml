@@ -164,7 +164,7 @@
       <template>
 	<condition name="botAvis">
 	  <li value="unknown"> Avec quoi </li>
-	<li value="true"> On est du meme avis </li> </condition>
+	<li value="true"> On est du meme avis <think><set name="botAvis">unknown</set></think></li> </condition>
       </template> 
     </category>
 
@@ -173,7 +173,7 @@
       <template>
 	<condition name="botAvis">
 	  <li value="unknown"> Avec quoi </li>
-	<li value="true"> Oh dommage </li> </condition>
+	<li value="true"> Oh dommage <think><set name="botAvis">unknown</set></think></li> </condition>
       </template> 
     </category>
 
