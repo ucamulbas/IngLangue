@@ -32,7 +32,7 @@
 0,TU SAIS FAIRE QUOI,*,*,Je sais faire du velo <think><set name="topic">velo</set></think>,normal.aiml
 0,QU'ES-CE QUE TU SAIS FAIRE QUOI,*,*,Je sais faire du velo <think><set name="topic">velo</set></think>,normal.aiml
 0,<SET>NAME</SET>,*,*,Je m'appelle <map name="identite">prenom</map>,normal.aiml
-0,TU SAIS PARLER,*,*,Ba oui <think><set name="topic">velo</set></think>,normal.aiml
+0,TU SAIS PARLER,*,*,Ba oui,normal.aiml
 0,<SET>AGE</SET>,*,*,J'ai <map name="identite">age</map>,normal.aiml
 0,<SET>GENRE</SET>,*,*,je suis <map name="identite">sexe</map>,normal.aiml
 0,QUOI DE NEUF,*,*,J'ai appris a faire du velo <think> <set name="topic">velo</set></think>,normal.aiml
@@ -55,6 +55,7 @@
 0,TU SAIS EN FAIRE DEPUIS COMBIEN DE TEMPS,*,VELO,La semaine dernierre,normal.aiml
 0,TU SAIS EN FAIRE DEPUIS QUAND,*,VELO,La semaine dernierre,normal.aiml
 0,DEPUIS QUAND,*,VELO,La semaine dernierre,normal.aiml
+0,DEPUIS COMBIEN DE TEMPS,*,VELO,La semaine dernierre,normal.aiml
 0,TU EN FAIS DEPUIS QUAND,*,VELO,La semaine dernierre,normal.aiml
 0,TU EN FAIS DEPUIS COMBIEN DE TEMPS,*,VELO,La semaine dernierre,normal.aiml
 0,TU FAIS DU VELO DEPUIS LA SEMAINE DERNIERRE,*,VELO,Oui,normal.aiml

@@ -219,7 +219,7 @@
 
   <category>
     <pattern> tu sais parler </pattern>
-    <template> Ba oui <think><set name="topic">velo</set></think></template>
+    <template> Ba oui </template>
   </category>
   
   <category>
@@ -330,8 +330,13 @@
     <template> La semaine dernierre </template>
   </category>
 
-    <category>
+  <category>
     <pattern> depuis quand </pattern>
+    <template> La semaine dernierre </template>
+  </category>
+
+  <category>
+    <pattern> depuis combien de temps </pattern>
     <template> La semaine dernierre </template>
   </category>
 

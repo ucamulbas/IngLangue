@@ -24,6 +24,26 @@
    </random></template>
  </category>
 
+<category>
+   <pattern> parce que </pattern>
+   <template> Ah bon </template>
+</category>
+
+<category>
+   <pattern> parce que *</pattern>
+   <template> Ah bon </template>
+ </category>
+ 
+<category>
+   <pattern> pourquoi </pattern>
+   <template> Je sais pas </template>
+ </category>
+
+<category>
+   <pattern> pourquoi *</pattern>
+   <template> Je sais pas </template>
+ </category>
+ 
  <category>
    <pattern> Quel temps il fait </pattern>
    <template><random>
@@ -42,10 +62,28 @@
    <pattern> <SET>couleur</SET> *</pattern>
    <that> C'est le vert et toi </that>
    <template><random>
-     <li>J'aime bien le <star index="2"/></li>
-     <li>Ah j'aime pas le <star index="2"/></li>
+     <li>J'aime bien le <star index="2"/><think><set name="botAvis">true</set></think></li>
+     <li>Ah j'aime pas le <star index="2"/><think><set name="botAvis">true</set></think></li>
    </random></template>
  </category>
+ 
+<category>
+      <pattern> Je suis d'accord </pattern>
+      <template>
+	<condition name="botAvis">
+	  <li value="unknown"> Avec quoi </li>
+	<li value="true"> On est du meme avis <think><set name="botAvis">unknown</set></think></li> </condition>
+      </template> 
+</category>
+
+  <category>
+      <pattern> Je ne suis pas d'accord </pattern>
+      <template>
+	<condition name="botAvis">
+	  <li value="unknown"> Avec quoi </li>
+	<li value="true"> Oh dommage <think><set name="botAvis">unknown</set></think></li> </condition>
+      </template> 
+    </category>
 
  <category>
    <pattern> tu fais du sport </pattern>
@@ -106,7 +144,8 @@
 
    <category>
      <pattern> pourquoi  </pattern>
-     <that> Non j'aime pas c'est nul </that>
+     <li><that> Non j'aime pas c'est nul </that></li>
+     <li><that> Ouai </that></li>
      <template> Parce que y'a des devoirs </template>
    </category>
 
