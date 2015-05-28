@@ -7,6 +7,7 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.SwingWorker;
 import javax.swing.text.BadLocationException;
@@ -28,6 +29,7 @@ protected String cherche;
 		fenetre.setLayout(new BorderLayout());
 		final JTextField text = new JTextField();
 		fenetre.add(text);
+		this.ui=ui;
 		fenetre.setVisible(true);
 		
 		text.addActionListener (new ActionListener(){
@@ -101,6 +103,7 @@ protected String cherche;
 			}
 			ui.main_txtarea.setDocument(doc);
 			System.out.println("nbLigne : " + nbLigne + " nbMot : " + nbMot + " et le mot : '" + cherche + "' apparait " + occ +" fois");
+			ui.statusInfo = new JLabel("nbLigne : " + nbLigne + " nbMot : " + nbMot + " et le mot : '" + cherche + "' apparait " + occ +" fois");
 			return null;
 
 		}
