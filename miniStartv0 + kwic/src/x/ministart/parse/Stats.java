@@ -7,7 +7,6 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.SwingWorker;
 import javax.swing.text.BadLocationException;
@@ -19,9 +18,9 @@ import x.ministart.sys.SwingWorkerExecutor;
 import x.ministart.utils.Chrono;
 
 public class Stats {
-	
-private SwingUI ui;
-protected String cherche;
+
+	private SwingUI ui;
+	private String cherche;
 
 	public Stats(final SwingUI ui) {
 		JFrame fenetre = new JFrame("mot a chercher");
@@ -31,24 +30,26 @@ protected String cherche;
 		fenetre.add(text);
 		this.ui=ui;
 		fenetre.setVisible(true);
-		
-		text.addActionListener (new ActionListener(){
-			public void actionPerformed (ActionEvent e) {
-				cherche=text.getText();
+
+		text.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				cherche = text.getText();
 				text.setText("");
 				SwingWorker<Integer, Object> swingWorker = new RunStats();
 				SwingWorkerExecutor.instance().execute(swingWorker);
-				swingWorker.addPropertyChangeListener( new PropertyChangeListener() {
-					@Override
-					public  void propertyChange(PropertyChangeEvent evt) {
-						if ("progress".equals(evt.getPropertyName())) {
-							if (ui.progressBar != null){
-								ui.progressBar.setValue((Integer)evt.getNewValue());
+				swingWorker
+						.addPropertyChangeListener(new PropertyChangeListener() {
+							@Override
+							public void propertyChange(PropertyChangeEvent evt) {
+								if ("progress".equals(evt.getPropertyName())) {
+									if (ui.progressBar != null) {
+										ui.progressBar.setValue((Integer) evt
+												.getNewValue());
+									}
+								}
 							}
-						}
-					}
 
-				});	
+						});
 			}
 		});
 	}
@@ -60,52 +61,51 @@ protected String cherche;
 		@Override
 		protected Integer doInBackground() throws Exception {
 			StyledDocument doc = (StyledDocument) ui.main_txtarea.getDocument();
-		    ui.main_txtarea.setDocument(new DefaultStyledDocument());
-			
-			ui.statusInfo.setText ("Parse ALL - running");
+			ui.main_txtarea.setDocument(new DefaultStyledDocument());
+			System.out.println("test");
+			ui.statusInfo.setText("Parse ALL - running");
 			this.chrono.start();
-			
-			int nbLigne = 0, nbMot = 0, occ = 0, parse_ind = 0, docLen = doc.getLength();
+
+			int nbLigne = 0, nbMot = 0, occ = 0, parse_ind = 0, docLen = doc
+					.getLength();
 			String mot = new String("");
 			boolean litMot = false;
-			try{
-				
-				for (int txt_ind = 0; txt_ind < docLen ; txt_ind++) {
-					setProgress( (txt_ind) * 100 / docLen);
-					
+			try {
+				for (int txt_ind = 0; txt_ind < docLen; txt_ind++) {
+					setProgress((txt_ind) * 100 / docLen);
+
 					char c_char = doc.getText(parse_ind, 1).charAt(0);
-					if(c_char=='\n'){
+					if (c_char == '\n') {
 						nbLigne++;
 					}
-					
-					if(Character.isWhitespace(c_char) && litMot==true){
-						litMot=false;
+
+					if (Character.isWhitespace(c_char) && litMot == true) {
+						litMot = false;
 						nbMot++;
-						if(mot.equals(cherche))
+						if (mot.equals(cherche))
 							occ++;
-						mot="";
+						mot = "";
 					}
-					
-					if(!Character.isWhitespace(c_char)){
-						if(litMot==false)
-							litMot=true;
-						if(c_char!='.' && c_char!=',')
-							mot=mot + c_char;
-						
-					}	
+
+					if (!Character.isWhitespace(c_char)) {
+						if (litMot == false)
+							litMot = true;
+						if (c_char != '.' && c_char != ',')
+							mot = mot + c_char;
+
+					}
 					++parse_ind;
 				}
-				
-				
-			}catch (BadLocationException e) {
+
+			} catch (BadLocationException e) {
 				e.printStackTrace();
 				throw new RuntimeException(e);
 			}
 			ui.main_txtarea.setDocument(doc);
-			System.out.println("nbLigne : " + nbLigne + " nbMot : " + nbMot + " et le mot : '" + cherche + "' apparait " + occ +" fois");
-			ui.statusInfo = new JLabel("nbLigne : " + nbLigne + " nbMot : " + nbMot + " et le mot : '" + cherche + "' apparait " + occ +" fois");
+			ui.statusInfo.setText("nbLigne : " + nbLigne + " nbMot : " + nbMot
+					+ " et le mot : '" + cherche + "' apparait " + occ
+					+ " fois");
 			return null;
-
 		}
 
 	}

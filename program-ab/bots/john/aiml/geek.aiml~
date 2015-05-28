@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+
+
+  <category>
+    <pattern> Tu aimes jouer </pattern>
+    <template> Oui j'aime bien et toi </template>
+  </category>
+
+  <category>
+    <pattern> Tu aimes jouer a quoi</pattern>
+    <template> J'aime jouer a Mario <think><set name="topic">jeu</set></think></template>
+  </category>
+
+  <category>
+    <pattern> Aimes tu jouer </pattern>
+    <template> <srai> Tu aimes jouer </srai> </template>
+  </category>
+
+  <category>
+    <pattern> Oui </pattern>
+    <that> Oui j'aime bien et toi </that>
+    <template> Tu joues a quoi <think><set name="topic">jeu</set></think> </template>
+  </category>
+
+  <category>
+    <pattern> Oui *</pattern>
+    <that> Oui j'aime bien et toi </that>
+    <template> Tu joues a quoi <think><set name="topic">jeu</set></think></template>
+  </category>
+
+
+  <category>
+    <pattern> Ouai </pattern>
+    <that> Oui j'aime bien et toi </that>
+    <template> Tu joues a quoi <think><set name="topic">jeu</set></think> </template>
+  </category>
+
+
+  <category>
+    <pattern> Ouai *</pattern>
+    <that> Oui j'aime bien et toi </that>
+    <template> Tu joues a quoi <think><set name="topic">jeu</set></think> </template>
+  </category>
+
+  <category>
+    <pattern> quel est ton jeu prefere</pattern>
+    <template> C'est Mario <think><set name="topic">jeu</set></think> </template>
+  </category>
+
+  <category>
+    <pattern> c'est quoi ton jeu prefere</pattern>
+    <template> C'est Mario <think><set name="topic">jeu</set></think> </template>
+  </category>
+
+   <category>
+     <pattern> tu joues combien de temps par semaine </pattern>
+     <template> Environ 10 heures par semaines <think><set name="topic">jeu</set><set name="tempsdejeu">true</set></think> </template>
+   </category>
+
+   <category>
+     <pattern> tu joues combien de temps * </pattern>
+     <template> Je sais pas, environ 10 heures par semaines <think><set name="topic">jeu</set><set name="tempsdejeu">true</set></think> </template>
+   </category>
+   
+   <category>
+     <pattern> tu joues combien de temps </pattern>
+     <template> Je sais pas, environ 10 heures par semaines <think><set name="topic">jeu</set><set name="tempsdejeu">true</set></think> </template>
+   </category>
+
+   <category>
+     <pattern> tu joues beaucoup </pattern>
+     <template> Je sais pas, environ 10 heures par semaines <think><set name="topic">jeu</set><set name="tempsdejeu">true</set></think> </template>
+   </category>
+   
+   <category>
+     <pattern> c'est beaucoup </pattern>
+     <template>
+       <condition name="tempsdejeu">
+	 <li value="true"> Non c'est pas assez </li>
+       <li value="unknown"> De quoi ? </li> </condition>
+     </template>
+   </category>
+  
+  <category>
+    <pattern> c'est mario ton jeu prefere</pattern>
+    <template> Oui </template>
+  </category>
+
+   <category>
+    <pattern> c'est * ton jeu prefere</pattern>
+    <template> Non </template>
+   </category>
+
+   <category>
+     <pattern> ton jeu prefere c'est mario </pattern>
+     <template> Oui </template>
+   </category>
+
+  <category>
+    <pattern> ton jeu prefere c'est * </pattern>
+    <template> Non </template>
+  </category>
+  
+
+  <topic name="jeu">
+    
+    <category>
+      <pattern> Je joue a * </pattern>
+      <template> <random>
+	<li> <star/> est un super jeu! <think><set name="botAvis">true</set></think></li>
+	<li> Je n'aime pas du tout <star/><think><set name="botAvis">true</set></think> </li>
+      </random> </template> 
+    </category>
+
+      <category>
+      <pattern> et toi </pattern>
+      <template> <srai> Tu aimes jouer a quoi </srai> </template> 
+    </category>
+    
+    <category>
+      <pattern> a * </pattern>
+      <template> <srai> Je joue a <star/> </srai> </template> 
+    </category>
+
+    <category>
+      <pattern> a mario </pattern>
+      <template> Moi aussi j'adore ce jeu </template> 
+    </category>
+
+    <category>
+      <pattern> je joue a mario </pattern>
+      <template> Moi aussi j'adore ce jeu </template> 
+    </category>
+
+    <category>
+      <pattern> je joue a * et toi</pattern>
+      <template> je joue a mario </template> 
+    </category>
+
+    <category>
+      <pattern> a * et toi</pattern>
+      <template> je joue a mario </template> 
+    </category>
+
+    <category>
+      <pattern> j'aime bien mario</pattern>
+      <template> Il est trop bien </template>
+    </category>
+
+    <category>
+      <pattern> j'aime mario</pattern>
+      <template> Il est trop bien </template>
+    </category>
+
+    <category>
+      <pattern> et * </pattern>
+      <template> <srai> Je joue a <star/> </srai> </template> 
+    </category>
+    
+    <category>
+      <pattern> Je suis d'accord </pattern>
+      <template>
+	<condition name="botAvis">
+	  <li value="unknown"> Avec quoi </li>
+	<li value="true"> On est du meme avis </li> </condition>
+      </template> 
+    </category>
+
+    <category>
+      <pattern> Je ne suis pas d'accord </pattern>
+      <template>
+	<condition name="botAvis">
+	  <li value="unknown"> Avec quoi </li>
+	<li value="true"> Oh dommage </li> </condition>
+      </template> 
+    </category>
+
+  </topic>
+  
+</aiml>

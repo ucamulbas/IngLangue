@@ -1,0 +1,62 @@
+0,*,*,*,Comment ?,normal.aiml
+0,NORESP,*,*,<random>#Newline      <li> Oui ? </li>#Newline      <li> Tu ne dis rien ? </li>#Newline      <li> Tu es là ? </li>#Newline    </random>,normal.aiml
+0,<SET>AUREVOIR</SET>,*,*,<condition name="userName">#Newline	<li value="unknown"> Aurevoir </li>#Newline      <li> Aurevoir <get name="userName"/> </li></condition>,normal.aiml
+0,<SET>SALUTATION</SET>,*,*,<condition name="salutation" value="true">#Newline	<random>#Newline	  <li>Tu m'a deja salue</li>#Newline	  <li>Tu me l'a deja dit#Comma t'a oublie ? </li>#Newline	  <li>Euh ... Oui ? </li>#Newline        </random></condition>#Newline      <condition name="salutation" value="unknown">#Newline	Salut ca va <think><set name="salutation">true</set></think></condition>,normal.aiml
+0,OUAI,SALUT CA VA,*,cool,normal.aiml
+0,BIEN,SALUT CA VA,*,cool,normal.aiml
+0,ET TOI,COOL,*,Je vais bien merci,normal.aiml
+0,MERCI,*,*,De rien,normal.aiml
+0,OUI,SALUT CA VA,*,cool,normal.aiml
+0,OUI ET TOI,SALUT CA VA,*,Je vais bien merci,normal.aiml
+0,BIEN ET TOI,SALUT CA VA,*,Je vais bien merci,normal.aiml
+0,OUAI ET TOI,SALUT CA VA,*,Je vais bien merci,normal.aiml
+0,MOI C'EST *,*,*,<srai> Je m'appelle <star/> </srai>,normal.aiml
+0,JE M'APPELLE *,*,*,Enchanter <think><set name="userName"><star/></set></think>moi c'est <map name="identite">prenom</map>,normal.aiml
+0,J'AI * ANS,*,*,Oh <think><set name="userAge"><star/></set></think>moi j'ai <map name="identite">age</map>,normal.aiml
+0,COMMENT JE M'APPELLE,*,*,Tu t'appelles  <get name="userName"> </get>,normal.aiml
+0,TU AIMES QUOI,*,*,Le velo  <think><set name="topic">velo</set></think>,normal.aiml
+0,QUI SUIS-JE,*,*,<condition name="userName">#Newline	<li value="unknown">Tu ne m'a pas dit ton nom et </li> #Newline	<li>Tu t'appelles <get name="userName"/> et </li></condition><condition name="userAge">#Newline	<li value="unknown">je ne connais pas ton age </li>#Newline        <li>t'as <get name="userAge"/> ans</li> </condition>,normal.aiml
+0,COMMENT CA VA,*,*,<srai>Ca va</srai>,normal.aiml
+0,COMMENT CA VA *,*,*,<srai>Ca va</srai>,normal.aiml
+0,CA VA,*,*,ca va bien merci,normal.aiml
+0,CA VA *,*,*,<srai>Ca va</srai>,normal.aiml
+0,ON PARLE DE QUOI,*,*,<condition name="topic">#Newline	<li value="unknown"> De rien pour l'instant </li>#Newline	<li> De <get name="topic"/> </li> </condition>,normal.aiml
+0,DE QUOI ON PARLE,*,*,<condition name="topic">#Newline	<li value="unknown"> De rien pour l'instant </li>#Newline	<li> De <get name="topic"/> </li> </condition>,normal.aiml
+0,<SET>QUIESTU</SET>,*,*,Je suis <map name="identite">prenom</map> #Comma j'ai <map name="identite">age</map> #Comma je mesure <map name="identite">taille</map> #Comma je pese <map name="identite">poids</map> et je suis <map name="identite">metier</map>,normal.aiml
+0,<SET>TAILLE</SET>,*,*,je mesure <map name="identite">taille</map>,normal.aiml
+0,<SET>POIDS</SET>,*,*,je pese <map name="identite">poids</map>,normal.aiml
+0,COMMENT S'APPELLE TES PARENTS,*,*,Mon pere s'appelle <map name="identite">pere</map> et m'a mere <map name="identite">mere</map>,normal.aiml
+0,COMMENT S'APPELLE TA MERE,*,*,Ma mere s'appelle <map name="identite">mere</map>,normal.aiml
+0,COMMENT S'APPELLE TON PERE,*,*,Mon pere s'appelle <map name="identite">pere</map>,normal.aiml
+0,<SET>TUFAISQUOI</SET>,*,*,Ba rien,normal.aiml
+0,TU SAIS FAIRE QUOI,*,*,Je sais faire du velo <think><set name="topic">velo</set></think>,normal.aiml
+0,QU'ES-CE QUE TU SAIS FAIRE QUOI,*,*,Je sais faire du velo <think><set name="topic">velo</set></think>,normal.aiml
+0,<SET>NAME</SET>,*,*,Je m'appelle <map name="identite">prenom</map>,normal.aiml
+0,TU SAIS PARLER,*,*,Ba oui <think><set name="topic">velo</set></think>,normal.aiml
+0,<SET>AGE</SET>,*,*,J'ai <map name="identite">age</map>,normal.aiml
+0,<SET>GENRE</SET>,*,*,je suis <map name="identite">sexe</map>,normal.aiml
+0,QUOI DE NEUF,*,*,J'ai appris a faire du velo <think> <set name="topic">velo</set></think>,normal.aiml
+0,QUI EST JOHN,*,*,C'est moi,normal.aiml
+0,QUI EST JULIE,*,*,C'est ma mere,normal.aiml
+0,QUI EST PATRIC,*,*,C'est mom pere,normal.aiml
+0,A BON,*,*,Ouai,normal.aiml
+0,TU VAS A L'ECOLE,*,*,Oui,normal.aiml
+0,TU AIMES LES VACANCES,*,*,Oui c'est trop bien,normal.aiml
+0,QUI EST *,*,*,Je ne sais pas,normal.aiml
+0,QUI EST TA MERE,*,*,<srai> comment s'appelle ta mere </srai>,normal.aiml
+0,QUI EST TON PERE,*,*,<srai> comment s'appelle ton pere </srai>,normal.aiml
+0,TU AIMES BIEN,*,VELO,Oui j'adore,normal.aiml
+0,TU EN FAIS,*,VELO,Oui,normal.aiml
+0,<SET>VELO</SET>,*,VELO,Oui sinon je tombe,normal.aiml
+0,TU VAS VITE,*,VELO,Oui je vais tres vite,normal.aiml
+0,IL EST DE QUELLE COULEUR,*,VELO,il est rouge,normal.aiml
+0,TU L'AS DEPUIS QUAND,*,VELO,La semaine dernierre,normal.aiml
+0,TU L'AS DEPUIS COMBIEN DE TEMPS,*,VELO,La semaine dernierre,normal.aiml
+0,TU SAIS EN FAIRE DEPUIS COMBIEN DE TEMPS,*,VELO,La semaine dernierre,normal.aiml
+0,TU SAIS EN FAIRE DEPUIS QUAND,*,VELO,La semaine dernierre,normal.aiml
+0,DEPUIS QUAND,*,VELO,La semaine dernierre,normal.aiml
+0,TU EN FAIS DEPUIS QUAND,*,VELO,La semaine dernierre,normal.aiml
+0,TU EN FAIS DEPUIS COMBIEN DE TEMPS,*,VELO,La semaine dernierre,normal.aiml
+0,TU FAIS DU VELO DEPUIS LA SEMAINE DERNIERRE,*,VELO,Oui,normal.aiml
+0,TU ES CONTENT *,*,VELO,Oui,normal.aiml
+0,TU ES CONTENT,*,VELO,Oui,normal.aiml

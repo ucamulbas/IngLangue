@@ -1,0 +1,37 @@
+0,<SET>RIGOLE</SET>,*,*,Content que ça te fasse rire,annexe.aiml
+0,<SET>SUPER</SET>,*,*,<random>#Newline     <li>Ouai c'est super </li>#Newline     <li>Oui c'est genial </li>#Newline     <li>Ouai </li>#Newline   </random>,annexe.aiml
+0,QUEL TEMPS IL FAIT *,*,*,<random>#Newline     <li> Il pleut </li>#Newline     <li> Il fait beau </li>#Newline     <li> Il y a des nuages </li>#Newline   </random>,annexe.aiml
+0,QUEL TEMPS IL FAIT,*,*,<random>#Newline     <li> Il pleut </li>#Newline     <li> Il fait beau </li>#Newline     <li> Il y a des nuages </li>#Newline   </random>,annexe.aiml
+0,<SET>COULEUR</SET>,*,*,C'est le vert et toi,annexe.aiml
+0,<SET>COULEUR</SET> *,C'EST LE VERT ET TOI,*,<random>#Newline     <li>J'aime bien le <star index="2"/></li>#Newline     <li>Ah j'aime pas le <star index="2"/></li>#Newline   </random>,annexe.aiml
+0,TU FAIS DU SPORT,*,*,Ouai je fais judo <think><set name="topic">sport</set></think>,annexe.aiml
+0,TU AIMES LE JUDO,*,*,Oui <think><set name="topic">sport</set></think>,annexe.aiml
+0,TU AIMES LE VELO,*,*,Oui <think><set name="topic">velo</set></think>,annexe.aiml
+0,TU ES EN QUELLE CLASSE,*,*,Je suis en CM2 <think><set name="topic">classe</set></think>,annexe.aiml
+0,TU AIMES L'ECOLE,*,*,Non j'aime pas c'est nul <think><set name="topic">classe</set></think>,annexe.aiml
+0,COMMENT S'APPELLE TON PROF,*,CLASSE,C'est M. Pagny,annexe.aiml
+0,TU N'AIMES PAS LES DEVOIRS,*,CLASSE,Non pas du tout,annexe.aiml
+0,QUI EST TON PROF,*,CLASSE,C'est M. Pagny,annexe.aiml
+0,QUI EST M. PAGNY,*,CLASSE,C'est mon prof,annexe.aiml
+0,QUI EST TON MEILLEUR AMIS,*,CLASSE,C'est Julien,annexe.aiml
+0,QUI EST JULIEN,*,CLASSE,C'est mon meilleur amis,annexe.aiml
+0,POURQUOI,NON J'AIME PAS C'EST NUL,CLASSE,Parce que y'a des devoirs,annexe.aiml
+0,TU AIMES LES DEVOIRS,*,CLASSE,Non pas du tout,annexe.aiml
+0,TU Y ARRIVE,*,CLASSE,Je me debrouille#Comma j'ai la moyenne,annexe.aiml
+0,TU AS COMBIEN D'AMIS,*,CLASSE,Je sais pas#Comma beaucoup,annexe.aiml
+0,TU AS BEAUCOUP D'AMIS,*,CLASSE,Oui,annexe.aiml
+0,T'AIMES BIEN,*,SPORT,Ouai#Comma chui fort au judo,annexe.aiml
+0,TU EN FAIS,*,SPORT,Ouai,annexe.aiml
+0,DEPUIS QUAND,*,SPORT,Depuis deux ans,annexe.aiml
+0,TU AIMES BIEN,*,SPORT,Ouai#Comma chui fort au judo,annexe.aiml
+0,CA TE PLAIS,*,SPORT,<srai>t'aime bien </srai>,annexe.aiml
+0,TU ES QUELLE CEINTURE,*,SPORT,Je suis ceinture jaune,annexe.aiml
+0,TU AS QUELLE CEINTURE,*,SPORT,Je suis ceinture jaune,annexe.aiml
+0,TU EN FAIS COMBIEN DE FOIS PAR SEMAINE,*,SPORT,Trois fois par semaine,annexe.aiml
+0,TU EN FAIS TROIS FOIS PAR SEMAINE,*,SPORT,Oui,annexe.aiml
+0,DEPUIS COMBIEN DE TEMPS,*,SPORT,Depuis deux ans,annexe.aiml
+0,DEPUIS COMBIEN DE TEMPS TU EN FAIS,*,SPORT,Depuis deux ans,annexe.aiml
+0,TU EN FAIS DEPUIS COMBIEN DE TEMPS,*,SPORT,Depuis deux ans,annexe.aiml
+0,TU EN FAIS DEPUIS DEUX ANS,*,SPORT,Oui,annexe.aiml
+0,DEPUIS DEUX ANS,*,SPORT,Oui,annexe.aiml
+0,TU AIMES LE *,*,SPORT,Non j'aime que le judo,annexe.aiml

@@ -1,0 +1,30 @@
+0,TU AIMES JOUER,*,*,Oui j'aime bien et toi,geek.aiml
+0,TU AIMES JOUER A QUOI,*,*,J'aime jouer a Mario <think><set name="topic">jeu</set></think>,geek.aiml
+0,AIMES TU JOUER,*,*,<srai> Tu aimes jouer </srai>,geek.aiml
+0,OUI,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,OUI *,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,OUAI,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,OUAI *,OUI J'AIME BIEN ET TOI,*,Tu joues a quoi <think><set name="topic">jeu</set></think>,geek.aiml
+0,QUEL EST TON JEU PREFERE,*,*,C'est Mario <think><set name="topic">jeu</set></think>,geek.aiml
+0,C'EST QUOI TON JEU PREFERE,*,*,C'est Mario <think><set name="topic">jeu</set></think>,geek.aiml
+0,TU JOUES COMBIEN DE TEMPS PAR SEMAINE,*,*,Environ 10 heures par semaines <think><set name="topic">jeu</set><set name="tempsdejeu">true</set></think>,geek.aiml
+0,TU JOUES COMBIEN DE TEMPS *,*,*,Je sais pas#Comma environ 10 heures par semaines <think><set name="topic">jeu</set><set name="tempsdejeu">true</set></think>,geek.aiml
+0,TU JOUES COMBIEN DE TEMPS,*,*,Je sais pas#Comma environ 10 heures par semaines <think><set name="topic">jeu</set><set name="tempsdejeu">true</set></think>,geek.aiml
+0,TU JOUES BEAUCOUP,*,*,Je sais pas#Comma environ 10 heures par semaines <think><set name="topic">jeu</set><set name="tempsdejeu">true</set></think>,geek.aiml
+0,C'EST BEAUCOUP,*,*,<condition name="tempsdejeu">#Newline	 <li value="true"> Non c'est pas assez </li>#Newline       <li value="unknown"> De quoi ? </li> </condition>,geek.aiml
+0,C'EST MARIO TON JEU PREFERE,*,*,Oui,geek.aiml
+0,C'EST * TON JEU PREFERE,*,*,Non,geek.aiml
+0,TON JEU PREFERE C'EST MARIO,*,*,Oui,geek.aiml
+0,TON JEU PREFERE C'EST *,*,*,Non,geek.aiml
+0,JE JOUE A *,*,JEU,<random>#Newline	<li> <star/> est un super jeu! <think><set name="botAvis">true</set></think></li>#Newline	<li> Je n'aime pas du tout <star/><think><set name="botAvis">true</set></think> </li>#Newline      </random>,geek.aiml
+0,ET TOI,*,JEU,<srai> Tu aimes jouer a quoi </srai>,geek.aiml
+0,A *,*,JEU,<srai> Je joue a <star/> </srai>,geek.aiml
+0,A MARIO,*,JEU,Moi aussi j'adore ce jeu,geek.aiml
+0,JE JOUE A MARIO,*,JEU,Moi aussi j'adore ce jeu,geek.aiml
+0,JE JOUE A * ET TOI,*,JEU,je joue a mario,geek.aiml
+0,A * ET TOI,*,JEU,je joue a mario,geek.aiml
+0,J'AIME BIEN MARIO,*,JEU,Il est trop bien,geek.aiml
+0,J'AIME MARIO,*,JEU,Il est trop bien,geek.aiml
+0,ET *,*,JEU,<srai> Je joue a <star/> </srai>,geek.aiml
+0,JE SUIS D'ACCORD,*,JEU,<condition name="botAvis">#Newline	  <li value="unknown"> Avec quoi </li>#Newline	<li value="true"> On est du meme avis </li> </condition>,geek.aiml
+0,JE NE SUIS PAS D'ACCORD,*,JEU,<condition name="botAvis">#Newline	  <li value="unknown"> Avec quoi </li>#Newline	<li value="true"> Oh dommage </li> </condition>,geek.aiml

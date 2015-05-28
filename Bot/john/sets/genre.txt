@@ -1,0 +1,10 @@
+quel est ton sexe
+tu es un garcon ou une fille
+t'es un garcon ou une fille
+fille ou garcon
+fille ou garçon
+tu es un garçon ou une fille
+tu es une fille ou un garcon
+tu es une fille ou un garçon
+garçon ou fille
+garcon ou fille

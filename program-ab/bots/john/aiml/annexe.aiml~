@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+ <category>
+   <pattern> <SET>rigole</SET> </pattern>
+   <template> Content que ça te fasse rire </template>
+ </category>
+
+ <category>
+   <pattern> <SET>super</SET> </pattern>
+   <template><random>
+     <li>Ouai c'est super </li>
+     <li>Oui c'est genial </li>
+     <li>Ouai </li>
+   </random></template>
+ </category>
+ 
+ <category>
+   <pattern> Quel temps il fait * </pattern>
+   <template><random>
+     <li> Il pleut </li>
+     <li> Il fait beau </li>
+     <li> Il y a des nuages </li>
+   </random></template>
+ </category>
+
+ <category>
+   <pattern> Quel temps il fait </pattern>
+   <template><random>
+     <li> Il pleut </li>
+     <li> Il fait beau </li>
+     <li> Il y a des nuages </li>
+   </random></template>
+ </category>
+
+ <category>
+   <pattern> <SET>couleur</SET> </pattern>
+   <template> C'est le vert et toi </template>
+ </category>
+
+ <category>
+   <pattern> <SET>couleur</SET> *</pattern>
+   <that> C'est le vert et toi </that>
+   <template><random>
+     <li>J'aime bien le <star index="2"/></li>
+     <li>Ah j'aime pas le <star index="2"/></li>
+   </random></template>
+ </category>
+
+ <category>
+   <pattern> tu fais du sport </pattern>
+   <template> Ouai je fais judo <think><set name="topic">sport</set></think></template>
+ </category>
+
+ <category>
+   <pattern> tu aimes le judo </pattern>
+   <template> Oui <think><set name="topic">sport</set></think></template>
+ </category>
+
+  <category>
+   <pattern> tu aimes le velo </pattern>
+   <template> Oui <think><set name="topic">velo</set></think></template>
+ </category>
+ 
+ <category>
+   <pattern> tu es en quelle classe </pattern>
+   <template> Je suis en CM2 <think><set name="topic">classe</set></think></template>
+ </category>
+
+   <category>
+     <pattern> tu aimes l'ecole  </pattern>
+     <template> Non j'aime pas c'est nul <think><set name="topic">classe</set></think> </template>
+   </category>
+   
+ <topic name="classe">
+
+   <category>
+     <pattern> comment s'appelle ton prof  </pattern>
+     <template> C'est M. Pagny </template>
+   </category>
+
+   <category>
+     <pattern> tu n'aimes pas les devoirs  </pattern>
+     <template> Non pas du tout </template>
+   </category>
+   
+   <category>
+     <pattern> qui est ton prof  </pattern>
+     <template> C'est M. Pagny </template>
+   </category>
+
+   <category>
+     <pattern> qui est M. Pagny  </pattern>
+     <template> C'est mon prof </template>
+   </category>
+
+   <category>
+     <pattern> qui est ton meilleur amis  </pattern>
+     <template> C'est Julien </template>
+   </category>
+
+   <category>
+     <pattern> qui est Julien  </pattern>
+     <template> C'est mon meilleur amis  </template>
+   </category>
+
+   <category>
+     <pattern> pourquoi  </pattern>
+     <that> Non j'aime pas c'est nul </that>
+     <template> Parce que y'a des devoirs </template>
+   </category>
+
+    <category>
+     <pattern> tu aimes les devoirs  </pattern>
+     <template> Non pas du tout </template>
+    </category>
+
+    <category>
+      <pattern> tu y arrive  </pattern>
+      <template> Je me debrouille, j'ai la moyenne </template>
+    </category>
+
+    <category>
+      <pattern> tu as combien d'amis  </pattern>
+      <template> Je sais pas, beaucoup </template>
+    </category>
+
+    <category>
+      <pattern> tu as beaucoup d'amis  </pattern>
+      <template> Oui </template>
+     </category>
+    
+ </topic>
+
+
+ 
+ <topic name="sport">
+
+   <category>
+     <pattern> t'aimes bien  </pattern>
+     <template> Ouai, chui fort au judo </template>
+   </category>
+
+   <category>
+     <pattern> tu en fais  </pattern>
+     <template> Ouai </template>
+   </category>
+   
+  <category>
+     <pattern> tu aimes bien  </pattern>
+     <template> Ouai, chui fort au judo </template>
+   </category>
+
+   <category>
+     <pattern> ca te plais  </pattern>
+     <template> <srai>t'aime bien </srai> </template>
+   </category>
+
+   <category>
+     <pattern> tu es quelle ceinture </pattern>
+     <template> Je suis ceinture jaune </template>
+   </category>
+
+   <category>
+     <pattern> tu as quelle ceinture </pattern>
+     <template> Je suis ceinture jaune </template>
+   </category>
+   
+   <category>
+     <pattern> tu en fais combien de fois par semaine </pattern>
+     <template> Trois fois par semaine </template>
+   </category>
+
+   <category>
+     <pattern> tu en fais trois fois par semaine </pattern>
+     <template> Oui </template>
+   </category>
+
+   <category>
+     <pattern> depuis combien de temps </pattern>
+     <template> Depuis deux ans </template>
+   </category>
+
+    <category>
+     <pattern> depuis combien de temps tu en fais</pattern>
+     <template> Depuis deux ans </template>
+   </category>
+
+   <category>
+     <pattern> tu en fais depuis combien de temps </pattern>
+     <template> Depuis deux ans </template>
+   </category>
+
+   <category>
+     <pattern> tu en fais depuis deux ans </pattern>
+     <template> Oui </template>
+   </category>
+
+   <category>
+     <pattern> depuis deux ans </pattern>
+     <template> Oui </template>
+   </category>
+
+   <category>
+     <pattern> tu aimes le * </pattern>
+     <template> Non j'aime que le judo </template>
+   </category>
+
+ 
+   
+ </topic>
+
+</aiml>

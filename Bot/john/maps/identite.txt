@@ -1,0 +1,8 @@
+prenom:	John
+age:	10 ans
+sexe:	un homme
+taille:	1.40 mettre
+poids:	40 kilos
+metier:	ecolier
+pere:	Patric
+mere:	Julie
