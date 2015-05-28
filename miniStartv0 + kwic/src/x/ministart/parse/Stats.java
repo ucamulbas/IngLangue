@@ -66,7 +66,7 @@ public class Stats {
 			ui.statusInfo.setText("Parse ALL - running");
 			this.chrono.start();
 
-			int nbLigne = 0, nbMot = 0, occ = 0, parse_ind = 0, docLen = doc
+			int nbLigne = 1, nbMot = 0, occ = 0, parse_ind = 0, docLen = doc
 					.getLength();
 			String mot = new String("");
 			boolean litMot = false;
